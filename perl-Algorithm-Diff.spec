@@ -3,8 +3,8 @@
 %bcond_without	tests	# don't perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Algorithm
-%define		pnam	Diff
+%define	pdir	Algorithm
+%define	pnam	Diff
 Summary:	Algorithm::Diff - compute `intelligent' differences between two files / lists
 Summary(pl):	Algorithm::Diff - ,,inteligentne'' znajdowanie ró¿nic pomiêdzy dwoma plikami / listami
 Name:		perl-Algorithm-Diff
