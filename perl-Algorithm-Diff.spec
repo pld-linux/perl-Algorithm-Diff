@@ -1,11 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Algorithm
 %define	pnam	Diff
-%include	/usr/lib/rpm/macros.perl
 Summary:	Algorithm-Diff perl module
 Summary(pl):	Modu³ perla Algorithm-Diff
 Name:		perl-Algorithm-Diff
 Version:	1.10
-Release:	9
+Release:	10
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -21,7 +21,7 @@ Algorithm-Diff wyszukuje ró¿nice pomiêdzy dwoma plikami, ³añcuchami,
 itp.
 
 %prep
-%setup -q -n Algorithm-Diff-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
