@@ -4,10 +4,10 @@ Summary(pl):	Modu³ perla Algorithm-Diff
 Name:		perl-Algorithm-Diff
 Version:	0.59
 Release:	3
-Copyright:	GPL
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Algorithm/Algorithm-Diff-%{version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Algorithm/Algorithm-Diff-%{version}.tar.gz
 BuildRequires:	perl >= 5.005_03-10
 %requires_eq	perl
 Requires:	%{perl_sitearch}
@@ -17,7 +17,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Algorithm-Diff finds differences between two files, two strings, etc.
 
 %description -l pl
-Algorithm-Diff wyszukuje ró¿nice pomiêdzy dwoma plikami, ³añcuchami, itp.
+Algorithm-Diff wyszukuje ró¿nice pomiêdzy dwoma plikami, ³añcuchami,
+itp.
 
 %prep
 %setup -q -n Algorithm-Diff-%{version}
