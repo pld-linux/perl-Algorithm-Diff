@@ -3,9 +3,10 @@ Summary:	Algorithm-Diff perl module
 Summary(pl):	Modu³ perla Algorithm-Diff
 Name:		perl-Algorithm-Diff
 Version:	1.10
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
+Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Algorithm/Algorithm-Diff-%{version}.tar.gz
 BuildRequires:	perl >= 5.005_03-10
@@ -29,13 +30,8 @@ perl Makefile.PL
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-(
-  cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/Algorithm/Diff
-  sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv -f .packlist.new .packlist
-)
+%{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 gzip -9nf README
 
@@ -44,9 +40,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README.gz
-
+%doc *.gz
 %dir %{perl_sitelib}/Algorithm
 %attr(755,root,root) %{perl_sitelib}/Algorithm/*.pl
-
 %{perl_sitearch}/auto/Algorithm/Diff
