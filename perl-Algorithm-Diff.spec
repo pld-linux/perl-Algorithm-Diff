@@ -9,7 +9,7 @@ Summary:	Algorithm::Diff - compute `intelligent' differences between two files /
 Summary(pl):	Algorithm::Diff - ,,inteligentne'' znajdowanie ró¿nic pomiêdzy dwoma plikami / listami
 Name:		perl-Algorithm-Diff
 Version:	1.15
-Release:	4
+Release:	5
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
