@@ -2,8 +2,8 @@
 Summary:	Algorithm-Diff perl module
 Summary(pl):	Modu³ perla Algorithm-Diff
 Name:		perl-Algorithm-Diff
-Version:	0.59
-Release:	3
+Version:	1.10
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
@@ -34,7 +34,7 @@ rm -rf $RPM_BUILD_ROOT
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/Algorithm/Diff
   sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv .packlist.new .packlist
+  mv -f .packlist.new .packlist
 )
 
 gzip -9nf README
