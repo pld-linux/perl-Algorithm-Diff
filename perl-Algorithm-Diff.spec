@@ -1,4 +1,4 @@
-%define		perl_sitelib	%(eval "`perl -V:installsitelib`"; echo $installsitelib)
+%include	/usr/lib/rpm/macros.perl
 Summary:	Algorithm-Diff perl module
 Summary(pl):	Modu³ perla Algorithm-Diff
 Name:		perl-Algorithm-Diff
