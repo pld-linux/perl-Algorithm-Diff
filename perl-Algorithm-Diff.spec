@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Algorithm
 %define	pnam	Diff
-Summary:	Algorithm-Diff perl module
-Summary(pl):	Modu³ perla Algorithm-Diff
+Summary:	Algorithm::Diff perl module
+Summary(pl):	Modu³ perla Algorithm::Diff
 Name:		perl-Algorithm-Diff
 Version:	1.15
 Release:	1
@@ -14,10 +14,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Algorithm-Diff finds differences between two files, two strings, etc.
+Algorithm::Diff finds differences between two files, two strings, etc.
 
 %description -l pl
-Algorithm-Diff wyszukuje ró¿nice pomiêdzy dwoma plikami, ³añcuchami,
+Algorithm::Diff wyszukuje ró¿nice pomiêdzy dwoma plikami, ³añcuchami,
 itp.
 
 %prep
