@@ -9,7 +9,7 @@ Summary:	Algorithm::Diff perl module
 Summary(pl):	Modu³ perla Algorithm::Diff
 Name:		perl-Algorithm-Diff
 Version:	1.15
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -28,7 +28,8 @@ itp.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 %{!?_without_tests:%{__make} test}
 
@@ -43,5 +44,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%attr(755,root,root) %{perl_sitelib}/Algorithm/*.pl
-%{perl_sitelib}/Algorithm/*.pm
+%attr(755,root,root) %{perl_vendorlib}/Algorithm/*.pl
+%{perl_vendorlib}/Algorithm/*.pm
