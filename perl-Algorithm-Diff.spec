@@ -4,8 +4,8 @@
 Summary:	Algorithm-Diff perl module
 Summary(pl):	Modu³ perla Algorithm-Diff
 Name:		perl-Algorithm-Diff
-Version:	1.10
-Release:	10
+Version:	1.15
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
