@@ -8,13 +8,14 @@
 Summary:	Algorithm::Diff - compute `intelligent' differences between two files / lists
 Summary(pl):	Algorithm::Diff - ,,inteligentne'' znajdowanie ró¿nic pomiêdzy dwoma plikami / listami
 Name:		perl-Algorithm-Diff
-Version:	1.15
-Release:	6
+Version:	1.1902
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	457cd497a0411a88b47d3741eb176071
+Source0:	http://www.cpan.org/modules/by-module/Algorithm/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	ff3e17ae485f8adfb8857b183991fbce
+URL:		http://search.cpan.org/dist/Algorithm-Diff/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
