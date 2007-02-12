@@ -6,7 +6,7 @@
 %define		pdir	Algorithm
 %define		pnam	Diff
 Summary:	Algorithm::Diff - compute `intelligent' differences between two files / lists
-Summary(pl):	Algorithm::Diff - ,,inteligentne'' znajdowanie r�nic pomi�dzy dwoma plikami / listami
+Summary(pl.UTF-8):   Algorithm::Diff - ,,inteligentne'' znajdowanie różnic pomiędzy dwoma plikami / listami
 Name:		perl-Algorithm-Diff
 Version:	1.1902
 Release:	1
@@ -26,12 +26,12 @@ any other two lists of things. It uses an intelligent algorithm
 similar to (or identical to) the one used by the Unix `diff' program. 
 It is guaranteed to find the *smallest possible* set of differences.
 
-%description -l pl
-Algorithm::Diff wyszukuje r�nice pomi�dzy dwoma plikami, �a�cuchami
+%description -l pl.UTF-8
+Algorithm::Diff wyszukuje różnice pomiędzy dwoma plikami, łańcuchami
 lub dwiema innymi listami. korzysta on z inteligentnego algorytmu
-podobnego do (lub identycznego) u�ywanego przez uniksowy program
-,,diff''. Zagwarantowane jest znalezienie *najmniejszego mo�liwego*
-zbioru r�nic.
+podobnego do (lub identycznego) używanego przez uniksowy program
+,,diff''. Zagwarantowane jest znalezienie *najmniejszego możliwego*
+zbioru różnic.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
