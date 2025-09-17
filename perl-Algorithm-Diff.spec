@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests	# don't perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define		pdir	Algorithm
 %define		pnam	Diff
@@ -14,9 +14,9 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Algorithm/%{pdir}-%{pnam}-%{pver}.tar.gz
+Source0:	https://www.cpan.org/modules/by-module/Algorithm/%{pdir}-%{pnam}-%{pver}.tar.gz
 # Source0-md5:	2eaae910f5220261ee2bbdfc4a8df2c2
-URL:		https://metacpan.org/release/Algorithm-Diff
+URL:		https://metacpan.org/dist/Algorithm-Diff
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov
 BuildRequires:	rpmbuild(macros) >= 1.745
